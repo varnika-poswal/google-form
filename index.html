@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="left">
+                <div class="g-form">
+                    <img src="file:///C:/Users/MI%20Computer/Desktop/googlelogo_color_272x92dp.png" width="70">
+               <h3>Create your Google Account</h3>
+               <form>
+                   <input type="text" name=""placeholder="first name" required>
+                   <input type="text" name=""placeholder="last name"required>
+                   <div id="uname">
+                   <input type="email" name=""placeholder="Username name" required>
+                   </div>
+                   <span>
+                       you can use letters,number & periode
+                   </span>
+                   <br>
+                   <a href="#">Use my current email address instead</a>
+                   <input type="password"name=""placeholder="Password"required id="pwrd">
+                   <input type="password"name=""placeholder="Confirm" required id="cpwrd">
+                   
+                   <br>
+                   <input type="checkbox"name=""class="checkbox"onclick="show()">
+                   &nbsp;Show password
+
+                   <div class="b-links">
+                       <a href="#">Sign in instead</a>
+                       <input type="submit"id="next"value="next">
+                   </div>
+               </form>
+                </div>
+            </div>
+            <div class="right">
+                <img src="file:///C:/Users/MI%20Computer/Desktop/download%20(3).png">
+                <p>
+                    one account.All of Google working for you
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <script type="text/javascript">
+        function show(){
+           var pwrd=document.getElementById("pwrd");
+           var cpwrd=document.getElementById("cpwrd");
+           if(pwrd.type==="password" &&cpwrd.type==="password"){
+               pwrd.type="text";
+               cpwrd.type="text";
+           }
+           else{
+               pwrd.type="password";
+               cpwrd.type="password";
+           }
+        }
+    </script>
+</body>
+</html>
